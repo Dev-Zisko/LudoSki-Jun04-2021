@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ludoski By Zisko</title>
+    <meta name="keywords" content="ludo, ludoski">
+    <meta name="description" content="Ludoski, diviertete!">
+    <meta name="author" content="Zisko">
+    <meta name="copyright" content="copyright 2021">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <h3 class="welcome-name">LudoSki</h3>
+    <div class="grid-container-game">
+
+      <div class="grid-game">
+        <div class="board-ludo"></div>
+
+        <div id="pieces-zone">
+          
+        </div>
+      </div>
+
+      <div class="grid-game">
+        <div id="chat"></div>
+
+        <form autocomplete="off">
+          <div id="controls">
+            <input type="text" id="username" placeholder="Usuario" autofocus />
+            <input type="text" id="content" placeholder="Mensaje" />
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+
+      <div class="grid-game">
+        <h2 id="turn-now" class="welcome-name">Turno actual: ?</h2>
+        <h2 id="my-turn" class="welcome-name">Tu turno es: ?</h2>
+        <div id="dice" class="dice" onclick="rollDice()"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
